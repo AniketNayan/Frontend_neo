@@ -1,0 +1,21 @@
+.t{
+        font-family: "Cedarville Cursive", cursive;
+}
+.text{
+    font-family: "Dancing Script", cursive;
+}
+h1{
+    text-align: center;
+}
+body{
+    background-image: url(bg.jpeg);
+}
+audio{
+ 
+bottom: 0; 
+position: fixed; 
+right: 0;
+}
+video{
+    align-self:flex-end;
+}

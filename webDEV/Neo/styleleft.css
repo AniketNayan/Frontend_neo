@@ -1,0 +1,70 @@
+/* Hero Section */
+.hero {
+    background-image: url('your-image.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Button Styling */
+button {
+    margin-top: 20px;
+    padding: 12px 24px;
+    font-size: 18px;
+    color: white;
+    background-color: #ff5722;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #e64a19;
+    transform: scale(1.05);
+}
+
+/* Drag and Drop Container */
+#drag-drop-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f4f4;
+    padding: 50px;
+}
+
+/* Drag and Drop Section */
+.drag-container {
+    display: flex;
+    gap: 50px;
+    margin-top: 20px;
+}
+
+.box {
+    width: 200px;
+    height: 250px;
+    border: 2px dashed #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.draggable {
+    background: #ff5722;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: grab;
+}

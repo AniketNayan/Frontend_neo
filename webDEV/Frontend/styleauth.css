@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    position: relative;
+    font-family: sans-serif;
+  }
+  
+  /* 🔹 Blue Icon Box */
+  .icon-wrapper {
+    width: 33.43px;
+    height: 30.58px;
+    background-color: #515DEF;
+    position: absolute;
+    top: 55.42px;
+    left: 62px;
+    border-radius: 6px;
+  }
+  
+  /* 🔸 Inner White Icon Shape */
+  .inner-icon {
+    width: 10.21px;
+    height: 18.76px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 79.35px;
+    left: 73.41px;
+    border-radius: 3px;
+  }
+  
+  /* 🅰️ Brand Name */
+  .brand-name {
+    width: 279px;
+    height: 53px;
+    position: absolute;
+    top: 51px;
+    left: 107.64px;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 700;
+    font-size: 35.33px;
+    line-height: 150%;
+    letter-spacing: -1%;
+    color: #ffffff;
+    background-color: #313131;
+    padding: 10px;
+    border-radius: 6px;
+  }
+  
+  /* ✅ Welcome Box */
+  .welcome-box {
+    width: 512px;
+    height: 60px;
+    position: absolute;
+    top: 204px;
+    left: 104px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 100%;
+    color: #ffffff;
+    background-color: #313131;
+    padding: 10px 20px;
+    border-radius: 8px;
+  }
+  .auth-form {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    background: #1C1B1F;
+    padding: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+    border-radius: 8px;
+  }
+  
+  .auth-form label {
+    display: block;
+    color: #fff;
+    margin-bottom: 8px;
+  }
+  
+  .auth-form input {
+    width: 100%;
+    padding: 10px;
+    background: #2D2C31;
+    color: #fff;
+    border: 1px solid #444;
+    border-radius: 4px;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+  }
+  
+  .auth-form input:focus {
+    border-color: #1E88E5;
+  }
+  
+  .auth-form input::placeholder {
+    color: #bbb;
+  }
+    

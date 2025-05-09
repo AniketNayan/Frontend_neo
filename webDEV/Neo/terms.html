@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeoMarche - Drag and Drop</title>
+    <link rel="stylesheet" href="stylenew.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+          <div class="logo">NeoMarche</div>
+          <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Demo</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Login/Signup</a></li>
+            <li class="login-signup"><a href="#">Book a Demo</a></li>
+          </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to NeoMarche</h1>
+            <p>AI Enabled 3D Store Creator</p>
+            <button onclick="scrollToSection('drag-drop-section')">Explore/Edit</button>
+            <button onclick="scrollToSection('image-preview-section')">View Previews</button>
+        </div>
+    </section>
+
+    <!-- Drag and Drop Section -->
+    <div class="container" id="drag-drop-section">
+        <div id="left">
+            <div class="list" draggable="true">
+                <img src="/Neo/img 3.jpg" alt="cap">
+                <span class="item-name">CAP</span>
+            </div>
+            <div class="list" draggable="true">
+                <img src="/Neo/img1.jpg" alt="tshirt">
+                <span class="item-name">T-shirt</span>
+            </div>
+            <div class="list" draggable="true">
+                <img src="/Neo/img2.jpg" alt="tshirt">
+                <span class="item-name">T-shirt</span>
+            </div>
+            <div class="list" draggable="true">
+                <img src="/Neo/img4.jpg" alt="cap">
+                <span class="item-name">CAP</span>
+            </div>
+            <div class="list" draggable="true">
+                <img src="/Neo/img11.jpg" alt="shoes">
+                <span class="item-name">Shoes</span>
+            </div>
+        </div>
+        <div id="right"></div>
+    </div>
+
+    <!-- Image Preview Section -->
+    <div class="page" id="image-preview-section">
+        <img src="/YT/img5.jpg" id="result" />
+        <div class="thumb-box">
+          <img src="/YT/img5.jpg" onclick="preview(this)" />
+          <img src="/YT/img6.jpg" onclick="preview(this)" />
+          <img src="/YT/img7.jpg" onclick="preview(this)" />
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+          <p>NeoMarche</p>
+          <ul class="footer-links">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Support</a></li>
+          </ul>
+        </div>
+    </footer>
+
+    <script>
+        function preview(el) {
+            document.getElementById("result").src = el.src;
+        }
+
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
